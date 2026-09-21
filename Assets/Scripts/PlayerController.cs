@@ -42,7 +42,7 @@ public class PlayerController : MonoBehaviour
         transform.Translate(Vector3.forward * Time.deltaTime * speed * moveInput.y);
 
         // Вращаем транспорт вокруг оси y, используя x компонент
-        if(moveInput.y > 0)
+        if (moveInput.y > 0)
             transform.Rotate(Vector3.up * Time.deltaTime * turnSpeed * moveInput.x); // Если движемся вперёд
         else if (moveInput.y < 0)
             transform.Rotate(Vector3.down * Time.deltaTime * turnSpeed * moveInput.x); // Если движемся назад
